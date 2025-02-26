@@ -1,0 +1,96 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Background Image Section
+.background-image {
+    background: url('images/your-background-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2rem;
+    font-weight: bold;
+} */
+
+/* Folk Dance Section */
+.folk-dance {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.folk-dance h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.dance-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.dance-card {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    background: #e9e9e9; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    outline: 2px solid rgb(138, 138, 138); /* Add black outline */
+}
+
+
+.dance-card:hover {
+    transform: translateY(-5px);
+}
+
+.dance-card img {
+    width: 100%;
+    height: 89%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    outline: 1px solid rgb(0, 0, 0); /* Add black outline */
+}
+
+.dance-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.dance-card p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    #navbar-collapse {
+        display: block;
+    }
+
+    .folk-dance-container {
+        flex-direction: column;
+    }
+
+    .footer-item {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 20px;
+    }
+}
